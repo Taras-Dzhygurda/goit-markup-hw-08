@@ -1,0 +1,104 @@
+.footer {
+    background: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline
+}
+
+.menu-footer__adress-link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.menu-footer__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.color-menu-footer__color-adress-link {
+    color: #F5F4FA
+}
+
+.adress-footer {
+    flex-grow: 1;
+    margin-right: 70px;
+}
+
+.join-title {
+    font-family: var(--primary-font-family);
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.join-footer {
+    margin-right: 93px;
+}
+
+.mail-form-footer {
+    min-width: 570px;
+}
+
+.mail-form-text-footer {
+    font-family: var(--primary-font-family);
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.mail-form__input-wrapper {
+    margin-right: 12px;
+}
+
+.mail-form__input {
+    width: 358px;
+    height: 50px;
+    padding: 15px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: #2F303A;
+    color: #ffffff;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+}
+
+.mail-form__btn {
+    display: inline-flex;
+    align-items: center;
+    min-width: 200px;
+    align-self: center;
+    @include font(700, 16px, 1.9, 0.06em);
+    color: var(--secondary-color);
+    background: var(--accent-color);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    padding: 10px 29px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background: #188CE8;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+
+}
+.mail-form-icon {
+    margin-left: 10px;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
